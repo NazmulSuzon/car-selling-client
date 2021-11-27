@@ -2,10 +2,12 @@
 
 https://car-selling-4e889.web.app/
 
+# Technologies: 
+
+ReactJs, Firebase, Bootstrap, React Bootstrap, NodeJs, MongoDB, ExpressJs
+
 # DETAILS
 
-1. OUR SHOP HAS BEST QUALITY
-2. WE PROVIDE BEST SERVICE
-3. YOU CAN FIND YOUR FAVORITE CAR FROM US.
-4. WE PROVIDE CAR WITE CHAP PRICE
-5. YOU ARE ALWAYS WELCOME IN OUR SHOP
+1. Individual admin panel for admin and user panel for users.
+2. Firebase sign up and custom registration form.
+3. Users can order any services and buy products and see them in the user panel.
