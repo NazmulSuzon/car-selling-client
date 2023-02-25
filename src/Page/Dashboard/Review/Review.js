@@ -47,7 +47,7 @@ console.log(reviews);
 
     // send data to server
     // console.log(review);
-    fetch("https://glacial-anchorage-88737.herokuapp.com/reviews", {
+    fetch("https://car-selling-server-production-e8ff.up.railway.app/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

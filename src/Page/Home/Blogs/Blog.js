@@ -6,7 +6,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // setCarsData(products);
-    const url = `https://glacial-anchorage-88737.herokuapp.com/blogs`;
+    const url = `https://car-selling-server-production-e8ff.up.railway.app/blogs`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setBlogs(data));

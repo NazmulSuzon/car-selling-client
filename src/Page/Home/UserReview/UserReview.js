@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import useAuth from "../../Hooks/useAuth";
 import Reviews from "./Reviews";
 
 const UserReview = () => {
   const [review, setReview] = useState([]);
 
-  const { user } = useAuth();
-
   useEffect(() => {
-    const url = `https://glacial-anchorage-88737.herokuapp.com/reviews`;
+    const url = `https://car-selling-server-production-e8ff.up.railway.app/reviews`;
     fetch(url)
     .then(res => res.json())
     .then(data => {

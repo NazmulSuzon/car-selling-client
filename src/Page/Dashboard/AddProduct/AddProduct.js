@@ -17,7 +17,7 @@ const AddProduct = () => {
   const handleProductSubmit = (e) => {
     const product = {...addProduct};
 
-    fetch('https://glacial-anchorage-88737.herokuapp.com/products', {
+    fetch('https://car-selling-server-production-e8ff.up.railway.app/products', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

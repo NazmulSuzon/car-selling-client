@@ -10,7 +10,7 @@ const MakeAdmin = () => {
 
     const handleOnSubmit = e => {
         const user ={ email };
-        fetch('https://glacial-anchorage-88737.herokuapp.com/users/admin', {
+        fetch('https://car-selling-server-production-e8ff.up.railway.app/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': "application/json"

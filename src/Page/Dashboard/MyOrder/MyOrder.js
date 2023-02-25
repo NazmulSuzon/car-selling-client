@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Col, Button } from "react-bootstrap";
 
 const MyOrder = (props) => {
   console.log("from my order", props.data.purchasedCar[0]);
   // console.log(props.data.phone);
-  const [order, setOrder] = useState([]);
 
-  const { title, img, _id, id } = props.data.purchasedCar[0];
+  const { title, img, id } = props.data.purchasedCar[0];
   const { email } = props.data.userInfo;
   console.log(id);
   const { phone, address, city } = props?.data;
@@ -16,7 +15,7 @@ const MyOrder = (props) => {
     const proceed = window.confirm("Are you sure ,you want to delete?");
 
     if (proceed) {
-      const url = `https://glacial-anchorage-88737.herokuapp.com/placeOrders/${id}`;
+      const url = `https://car-selling-server-production-e8ff.up.railway.app/placeOrders/${id}`;
 
       fetch(url, {
         method: "DELETE",

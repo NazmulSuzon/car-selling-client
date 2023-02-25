@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
-import useAuth from "../../Hooks/useAuth";
 import MyOrder from "./MyOrder";
 
 const Order = () => {
   const [myOrder, setMyOrder] = useState([]);
   const [isSpinnerTrue, setIsSpinnerTrue] = useState(false);
 
-  const { user } = useAuth();
-
   useEffect(() => {
     setIsSpinnerTrue(true);
-    const url = `https://glacial-anchorage-88737.herokuapp.com/placeOrders`;
+    const url = `https://car-selling-server-production-e8ff.up.railway.app/placeOrders`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {

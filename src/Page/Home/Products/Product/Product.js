@@ -7,7 +7,7 @@ const Product = () => {
 
   useEffect(() => {
     // setCarsData(products);
-    const url = `https://glacial-anchorage-88737.herokuapp.com/products`
+    const url = `https://car-selling-server-production-e8ff.up.railway.app/products`
     fetch(url)
     .then(res => res.json())
     .then(data => setCarsData(data))

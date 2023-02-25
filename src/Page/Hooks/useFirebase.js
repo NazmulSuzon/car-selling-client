@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -74,7 +74,7 @@ const useFirebase = () => {
         setIsLoading(false);
     });
     return () => unsubscribed;
-}, [])
+}, [auth])
 
   const logOut = () => {
     setIsLoading(true);
@@ -90,7 +90,7 @@ const useFirebase = () => {
 
   const saveUser = (email,displayName) => {
     const user = { email, displayName };
-    fetch('https://glacial-anchorage-88737.herokuapp.com/users', {
+    fetch('https://car-selling-server-production-e8ff.up.railway.app/users', {
       method:'POST',
       headers: {
         'content-type': 'application/json'

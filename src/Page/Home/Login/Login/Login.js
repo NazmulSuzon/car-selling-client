@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import { Form, Button} from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const Login = () => {
     // const useEmail = { loginData?.email }
     logInUser(loginData.email, loginData.password, location, history);
 
-    fetch('https://glacial-anchorage-88737.herokuapp.com/findadmin', {
+    fetch('https://car-selling-server-production-e8ff.up.railway.app/findadmin', {
       method:'POST',
       headers: {
         'content-type': 'application/json',
